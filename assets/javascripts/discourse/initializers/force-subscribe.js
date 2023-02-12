@@ -9,8 +9,9 @@ export default {
             const user = api.getCurrentUser();
             const siteSettings = container.lookup("site-settings:main");
             const productId = siteSettings.discourse_subscriptions_force_subscribe_product;
-            
-            if (user && productId) {
+
+            console.log("user", user);
+            if (user && !(user.admin || user.moderator) && productId) {
                 // First time check
                 Subscription.show(productId).then((result) => {
                     if (!result.product.subscribed) {
