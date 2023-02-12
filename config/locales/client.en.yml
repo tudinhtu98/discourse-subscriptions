@@ -6,6 +6,7 @@ en:
     discourse_subscriptions_secret_key: Stripe Secret Key
     discourse_subscriptions_webhook_secret: Stripe Webhook Secret
     discourse_subscriptions_currency: Default Currency Code. This can be overridden when creating a subscription plan.
+    discourse_subscriptions_force_subscribe_product: Force users to subscribe this Stripe product id. If this setting is blank, this feature will be disable.
     discourse_subscriptions_campaign_enabled: Enables a campaign banner to promote supporting this community financially.
     discourse_subscriptions_campaign_goal: The numerical goal for your support campaign (subscribers or amount raised).
     discourse_subscriptions_campaign_type: Selects the type of campaign to run (subscribers or monthly amount raised).
